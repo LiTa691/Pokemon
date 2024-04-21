@@ -1,10 +1,53 @@
+@font-face {
+    font-family: myFont;
+    src: url(./font/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
 body {
+    font-family: myFont;
     margin: 0;
 }
 
 #pokedex {
     min-height: 50vh;
-    background-color: rgb(61, 10, 10);
+    background-color: #FA6C6C;
     color: white;
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.info-container {
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -30px;
+    min-height: 100px;
+}
+
+#pokemonImage {
+    margin-top: -333px;
+    width: 416px;
+    margin-left: 20%;
+}
+
+.pokeNumber {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 480px;
+    margin-top: -41px;
+}
+
+.pokemonType {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 0;
+    border-radius: 10px;
+    background-color: #ed8d8d;
+    padding-right: 16px;
+    padding-left: 16px;
 }
