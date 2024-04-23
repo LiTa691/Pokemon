@@ -41,7 +41,7 @@ body {
     margin-top: -41px;
 }
 
-.pokemonType {
+#pokemonType {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -50,4 +50,33 @@ body {
     background-color: #ed8d8d;
     padding-right: 16px;
     padding-left: 16px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grey {
+    color: lightgray;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.base-state {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.paddWidth {
+    padding-left: 90px;
+    width: 115px;
+}
+
+.paddLeft {
+    padding-left: 100px;
 }

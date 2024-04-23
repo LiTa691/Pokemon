@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokédex</title>
 
     <script src="./script.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -12,20 +12,62 @@
 
 <body onload="loadPokemon()">
 
-    <div id="pokedex">
+    <section id="pokedex">
         <h1 id="pokemonName">Name</h1>
 
         <div id="pokemonType"></div>
 
-        <div class="pokeNumber">
+        <div class="pokeNumber font-bold">
             <div>#00</div>
             <div id="pokemonNumber"></div>
         </div>
-    </div>
+    </section>
 
-    <div class="info-container">
+    <section class="info-container">
         <img id="pokemonImage">
-    </div>
+
+        <div class="title font-bold">
+            <p class="grey">About</p>
+            <p class="black">Base States</p>
+            <p class="grey">Evolution</p>
+            <p class="grey">Moves</p>
+        </div>
+
+        <div>
+            <table>
+                <tr class="base-state">
+                    <td id="baseStateHp" class="paddWidth"></td>
+                    <td id="baseStateHpNumber" class="paddLeft"></td>
+                    <td></td>
+                </tr>
+                <tr class="base-state">
+                    <td id="baseStateAttack" class="paddWidth"></td>
+                    <td id="baseStateAttackNumber" class="paddLeft"></td>
+                    <td></td>
+                </tr>
+                <tr class="base-state">
+                    <td id="baseStateDefense" class="paddWidth"></td>
+                    <td id="baseStateDEfenseNumber" class="paddLeft"></td>
+                    <td></td>
+                </tr>
+                <tr class="base-state">
+                    <td id="baseStateSpAtk" class="paddWidth"></td>
+                    <td id="baseStatespAtkNumber" class="paddLeft"></td>
+                    <td></td>
+                </tr>
+                <tr class="base-state">
+                    <td id="baseStateSpDef" class="paddWidth"></td>
+                    <td id="baseStateSpDefNumber" class="paddLeft"></td>
+                    <td></td>
+                </tr>
+                <tr class="base-state">
+                    <td id="baseStateTotal" class="paddWidth"></td>
+                    <td id="baseStateTotalNumber" class="paddLeft"></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </section>
 
 </body>
 
