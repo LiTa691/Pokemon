@@ -1,7 +1,7 @@
 let currentPokemon;
 
 async function loadPokemon() {
-    let url = 'https://pokeapi.co/api/v2/pokemon/charmander';
+    let url = 'https://pokeapi.co/api/v2/ability/66/';
     let response = await fetch(url);
     currentPokemon = await response.json();
 
@@ -26,3 +26,4 @@ function renderPokemonInfo() {
     document.getElementById('baseStateSpDef').innerHTML = currentPokemon['stats']['4']['stat']['name'];
     document.getElementById('baseStateSpDefNumber').innerHTML = currentPokemon['stats']['4']['base_stat'];
 }
+

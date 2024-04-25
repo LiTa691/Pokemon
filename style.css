@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+.backgroundColor {
+    background-color: #1b1a1a;
+}
+
 #pokedex {
     min-height: 50vh;
     background-color: #FA6C6C;
@@ -79,4 +83,33 @@ body {
 
 .paddLeft {
     padding-left: 100px;
+}
+
+.pokeLogo {
+    height: 150px;
+    padding-right: 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.colorWhite {
+    color: white;
+}
+
+.inport {
+    border-color: goldenrod;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    margin-top: 16px;
 }
