@@ -1,16 +1,20 @@
 let currentPokemon;
+let pokemonAmount = 22;
+let stats = [];
+let data = [];
 
 async function loadPokemon() {
-    let url = 'https://pokeapi.co/api/v2/ability/66/';
+    for (let i = 1; i < 22; i++) {
+    let url = `https://pokeapi.co/api/v2/pokemon/${i}`;
     let response = await fetch(url);
     currentPokemon = await response.json();
-
+    data.push(pokemon);
     console.log('Loadet Pokémon', currentPokemon);
-
-    renderPokemonInfo()
+    renderPokemonInfo(i, pokemon);
+    }
 }
 
-function renderPokemonInfo() {
+function renderPokemonInfo(i, pokemon) {
     document.getElementById('pokemonName').innerHTML = currentPokemon['name'];
     document.getElementById('pokemonNumber').innerHTML = currentPokemon['id'];
     document.getElementById('pokemonType').innerHTML = currentPokemon['types']['0']['type']['name'];

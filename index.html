@@ -22,16 +22,19 @@
         </div>
 
         <h4 class="colorWhite">1'302 Pokémon are found in this Pokedex</h4>
-        <input class="inport colorWhite backgroundColor" type="search" placeholder=" search Pokémon">
+        <input oninput="search()" class="inport colorWhite backgroundColor" id="searchInput" type="search"
+            placeholder=" search Pokémon">
     </header>
+
+    <section onclick="closeCard()" id="overlay" class="d-none"></section>
+    <section id="searchContent" class="main-content d-none"></section>
+    <section onclick="closeCard()" id="overlay" class="display-none"></section>
 
     <section id="pokedex">
         <h1 id="pokemonName">Name</h1>
-
         <div id="pokemonType"></div>
-
         <div class="pokeNumber font-bold">
-            <div>#00</div>
+            <div>#</div>
             <div id="pokemonNumber"></div>
         </div>
     </section>
@@ -75,11 +78,6 @@
                 <tr class="base-state">
                     <td id="baseStateSpDef" class="paddWidth"></td>
                     <td id="baseStateSpDefNumber" class="paddLeft"></td>
-                    <td></td>
-                </tr>
-                <tr class="base-state">
-                    <td id="baseStateTotal" class="paddWidth"></td>
-                    <td id="baseStateTotalNumber" class="paddLeft"></td>
                     <td></td>
                 </tr>
             </table>
